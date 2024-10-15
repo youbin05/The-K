@@ -1,0 +1,110 @@
+@media screen and (max-width:768px){
+  html,body{
+    max-width: 468px;
+    height: auto;
+  }
+  body{
+    padding: 15px;
+  }
+  /*  common   */
+  .wrap{
+    max-width: 468px;
+    height: auto;
+    margin: 0;
+  }
+/*  header  */
+  header{
+    width: 100%;
+    height: auto;
+  }
+  div#header{
+  grid-template-columns:    repeat(2,auto) !important;
+  grid-template-rows:   repeat(3,auto) !important;
+  row-gap: 10px !important;
+  padding-top: 0 !important;
+  }
+  div#header h1{
+    width: fit-content;
+    grid-column: 1;
+    grid-row: 1 !important;
+    align-self: center;
+    margin: 0 !important;
+  }
+  div#header ul.etc{
+    width: auto;
+    height: 40px;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    justify-self: right;
+    align-items: center;
+    margin-right: 100px;
+  }
+  div#header ul.etc li{
+    height: 20px;
+  }
+  div#header ul.gnb{
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    grid-column: 1 /span 2;
+    grid-row: 3;
+    flex-direction: row;
+  }
+  div#header ul.gnb li{
+  width: fit-content;
+  margin: 0;
+  }
+  div#header ul.mainmenu{
+    grid-row: 4;
+    justify-content: center;
+  }
+  div#header ul.mainmenu li{
+    
+  margin-right: 35px !important;
+  }
+  div#header ul.mainmenu li a{
+    font-size: 12px;
+  }
+  div#header span.rightmenu{
+    grid-column: 2;
+    grid-row: 1;
+  }
+/*  title slick  */
+  div#tltle > div{
+    width: 100%;
+    height: 550px !important;
+  }
+  div#tltle{
+    width: 100% !important;
+    height: 550px !important;
+  }
+  div#tltle h2{
+    font-size: 26px !important;
+    margin: 40px 0 40px 20px !important;
+    width: auto !important;
+  }
+  div#tltle p{
+    margin:  35px !important;
+    font-size: 15px;
+  }
+  div#tltle article.trophy p:nth-of-type(2){
+    margin-left: 33px !important;
+  }
+  div#tltle article{
+    height: 550px;
+    padding: 0 !important;
+    background-size: 55%;
+    background-position: 85% 90% !important;
+  }
+  div#tltle a{
+    background: #fff;
+    border-radius: 20px;
+    padding:  10px !important;
+    margin-left: 45px;
+    transition: 0.5s;
+  }
+  div#tltle a:hover{
+    background: #333;
+    color: #f4f4f4;
+  }
+}
